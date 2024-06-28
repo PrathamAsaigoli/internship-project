@@ -1,0 +1,43 @@
+{%extends 'layout.html'%}
+{%block content%}
+<link rel="stylesheet" href="/static/paymentform.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <div class="bill-container">
+        <h1>Final Bill</h1>
+        <div class="buyer-info">
+            <h2>Buyer Information</h2>
+            <p><strong>Name:</strong> Pratham V Asaigoli</p>
+            <p><strong>Phone Number:</strong> 123456789</p>
+            <p><strong>Address:</strong> 2nd Kolya, Kotekar Post, Mangaluru, Karnataka</p>
+        </div>
+        <table class="bill-table">
+            <thead>
+                <tr>
+                    <th>Product Name</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Amount</th>
+                </tr>
+            </thead>
+            <tbody>
+                {%for n in Allitems%}
+                <tr>
+                    <td>{{n.name}}</td>
+                    <td>{{n.quantity}}</td>
+                    <td>{{n.price}}</td>
+                    <td>{{n.totalprice}}</td>
+                </tr>
+                {%endfor%}
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3"><strong>Grand Total</strong></td>
+                    <td><strong>Rs {{GrandTotal}}</strong></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+{%endblock%}

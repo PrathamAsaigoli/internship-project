@@ -1,0 +1,55 @@
+{%extends 'layout.html'%} 
+{%block content%}
+
+ <link rel="stylesheet" href="/static/productdetail.css">
+<div class="productinfo">
+  <div class="productimg">
+    <img src="/media/{{ProductData.img}}" alt="" />
+  </div>
+  <div class="productdescription">
+
+    <div class="productname_price">
+      <h1>{{ProductData.name}}</h1>
+    </div>
+    <div class="price">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="16"
+        height="16"
+        fill="currentColor"
+        class="bi bi-currency-rupee"
+        viewBox="0 0 16 16"
+      >
+        <path
+          d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4z"
+        />
+      </svg>
+      <h4>{{ProductData.price}}</h4>
+
+      <h5>+ Free Shipping</h5>
+    </div>
+    <div class="productdetail">
+        {{ProductData.decription}}
+    </div>
+    <div class="quantity">
+
+        <form method="post" action="{%url 'addtocart' ProductData.id%}">
+          
+          {%csrf_token%}
+          <div class="number">
+            <input type="number" id="quantity" name="quantity" min="1" max="100" step="1" value="1" >
+          </div>
+          
+          <div class="submitbutton">
+              <input type="submit" value="Add to cart">
+          </div>
+
+            
+        </form>
+
+    </div>
+
+
+  </div>
+</div>
+{%endblock%}

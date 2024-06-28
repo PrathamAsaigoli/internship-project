@@ -1,0 +1,73 @@
+.productinfo{
+    display: flex;
+    width: 80%;
+    margin-top: 50px;
+    margin-left: 150px;
+
+}
+
+.productimg{
+    display: flex;
+    margin-right: 50px;
+}
+
+.productimg img{
+height: 500px;  
+}
+
+.productdescription{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+
+.productname_price h1{
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.price{
+    display: inline-flex;
+    margin-top: 5px;
+}
+
+.price svg{
+    height: 35px;
+}
+
+.price h4{
+    margin-top: -5px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.price h5{
+    margin-top: 4px;
+    margin-left: 4px;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.quantity{
+    display: flex;
+     align-items: center;
+    margin-top: 25px;
+
+}
+.number input{
+    height: 37px;
+    width: 60px;
+    
+}
+
+.submitbutton input {
+    margin-top: 20px;
+    background-color: rgb(75, 170, 80);
+    height: 37px; 
+    width: 100px;
+    border-radius: 5px; 
+    color: white; 
+    border: none;
+    cursor: pointer;
+}

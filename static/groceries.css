@@ -1,0 +1,89 @@
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.urls{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: -15px;
+}
+.url{
+    margin-top: 50px;
+    margin-left: -160px;
+}
+
+.groceriestitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+
+.groceriestitle h1{
+    font-size: 70px;
+    font-weight: 400;
+    color: rgb(68, 102, 68);
+}
+.groceriestitle a{
+    font-size: 20px;
+
+}
+.leafimg{
+    display: flex;
+    justify-content: center;
+ 
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.container ul{
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 10px; 
+    list-style: none; 
+
+
+}
+.container li {
+    display: inline-block;
+    margin-right: 10px;
+}
+.productimage{
+    display: flex;
+}
+.productimage img{
+    height: 250px;
+}
+.productdescriptiom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.productdescriptiom h4{
+    font-size: 15px;
+    font-weight: 400;
+}
+.productdescriptiom h1{
+    font-size: 20px;
+    font-weight: 600;
+}
+.price{
+    display: flex;
+    align-items: center;
+    
+}
+.price svg {
+    margin-right: 2px;
+}

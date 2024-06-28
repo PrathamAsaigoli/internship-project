@@ -1,0 +1,45 @@
+{%extends 'layout.html'%}
+{%block content%}
+<link rel="stylesheet" href="/static/cart.css">
+<div class="cart-container">
+    <h1>Shopping Cart</h1>
+    <table class="cart-table">
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Total</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            {%for n in Allitems%}
+            <tr>
+                <td>
+                    <div class="cart-product">
+                        <img src="/media/{{n.img}}" alt="Product Image">
+                        <div class="product-info">
+                            <h4>{{n.name}}</h4>
+                            <!-- <p>Product description goes here.</p> -->
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <h1>{{n.quantity}}</h1>
+                </td>
+                <td>{{n.price}}</td>
+                <td>{{n.totalprice}}</td>
+                <td><a href="{%url 'deletecartitem' n.id %}"><button class="remove-btn">Remove</button></a></td>
+            </tr>
+            {%endfor%}
+        </tbody>
+    </table>
+
+    <div class="cart-summary">
+
+        <p>Total: {{GrandTotal}}</p>
+        <a href="{%url 'paymentform'%}"><button class="checkout-btn">Proceed to Checkout</button></a>
+    </div>
+</div>
+{%endblock%}

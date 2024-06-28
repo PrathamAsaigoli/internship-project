@@ -1,0 +1,204 @@
+/* background */
+.bg {
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh; /* Adjust this as needed */
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Adjust this as needed */
+}
+
+.bg img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This will make the image cover the entire container */
+}
+
+.productpng {
+  
+    /* margin-top: -900px; */
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%; 
+    display: flex;
+
+    align-items: center; 
+}
+
+.productpng img {
+    margin-top: 100px;
+    margin-left: 50px;
+    width: 40%; 
+    height: 70%; 
+    opacity: 0.9; 
+
+}
+
+.slogan {
+    position: absolute;
+    display: list-item;
+    top: 25%;
+    left: 45%;
+    justify-content: left;
+    align-items: center;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.slogan h4{
+font-size: 60px;
+}
+.slogan h1{
+font-size: 20px;
+}
+
+.slogan a {
+    margin-top: 30px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2f8b32; 
+    color: white; 
+    text-decoration: none; 
+    border: none; 
+    border-radius: 4px; 
+    font-size: 16px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
+
+.slogan a:hover {
+    background-color: #44c94b;
+} 
+
+/* background end */
+
+
+
+
+
+/* Advertisement  */
+.advertise{
+    display: flex;   
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 300px;
+
+}
+ /*Free shpping  */
+.freeshipping{
+    display: flex;      
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(71, 71, 57);
+    border-radius: 10px;
+    width: 25%;
+    height: 50%;
+    margin: 10px;
+}
+
+.icon svg{
+    width: 40px;
+    height: 40px;
+    color: #44c94b;
+    margin-right: 15px;
+} 
+
+.containertxt h1{
+    color: aliceblue;
+    font-size: 30px;
+}
+.containertxt h4{
+    color: aliceblue;
+    font-size: 15px;
+}
+
+/* Advertisemnet end */
+
+
+
+
+/* Best selling products css */
+.bestselling{
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height:  900px;
+    margin-bottom: -50px;
+
+}
+
+
+.heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -100px;
+    margin-bottom: 10px;
+}
+.heading h1{
+    font-size: 50px;
+}
+
+.leafimg{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;   
+}
+
+.listitem li {
+    display: inline-block;
+    margin-right: 10px;
+}
+.productimage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.productimage img{
+    height: 290px;
+}
+
+.productdescriptiom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.productdescriptiom h4{
+    font-size: 15px;
+    font-weight: 400;
+}
+.productdescriptiom h1{
+    font-size: 20px;
+    font-weight: 600;
+}
+.price{
+    display: flex;
+    align-items: center;
+    
+}
+.price svg {
+    margin-right: 2px;
+}
+/* Best selling products css end */
+
+
+
+/* .categories{
+    background-color: rgb(230, 216, 216);
+    width: 100%;
+    height: 70%;
+} */

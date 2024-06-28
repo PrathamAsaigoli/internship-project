@@ -1,0 +1,150 @@
+{%extends 'layout.html'%}
+
+{%block content%}
+<link rel="stylesheet" href="/static/index.css">
+<div class="bg">
+    <img src="/static/bg.png" alt="">
+    <div class="productpng">
+        <img src="/static/organic-products-hero.png" alt="">
+    </div>
+    <div class="slogan">
+        <h4>Best Quality Products !</h4>
+        <h1>Quick Cart: Fast Start, Smart Cart! </h1>
+        <a href="{%url 'groceries'%}">SHOP NOW</a>
+    </div>
+</div>
+
+
+
+
+
+<div class="advertise">
+    <div class="freeshipping">
+        <div class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-truck" viewBox="0 0 16 16">
+                <path d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5zm1.294 7.456A2 2 0 0 1 4.732 11h5.536a2 2 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456M12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2"/>
+            </svg>
+        </div>
+        <div class="containertxt">
+            <h1>Free Shipping</h1>
+            <h4>Above 499 only</h4>
+        </div>
+
+    </div>
+
+    <div class="freeshipping">
+        <div class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cash" viewBox="0 0 16 16">
+                <path d="M8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4"/>
+                <path d="M0 4a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V6a2 2 0 0 1-2-2z"/>
+            </svg>
+
+        </div>        
+        <div class="containertxt">
+            <h1>Huge Savings</h1>
+            <h4>At Lowest Price</h4>
+        </div>       
+    </div>
+
+    <div class="freeshipping">
+        <div class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-recycle" viewBox="0 0 16 16">
+                <path d="M9.302 1.256a1.5 1.5 0 0 0-2.604 0l-1.704 2.98a.5.5 0 0 0 .869.497l1.703-2.981a.5.5 0 0 1 .868 0l2.54 4.444-1.256-.337a.5.5 0 1 0-.26.966l2.415.647a.5.5 0 0 0 .613-.353l.647-2.415a.5.5 0 1 0-.966-.259l-.333 1.242zM2.973 7.773l-1.255.337a.5.5 0 1 1-.26-.966l2.416-.647a.5.5 0 0 1 .612.353l.647 2.415a.5.5 0 0 1-.966.259l-.333-1.242-2.545 4.454a.5.5 0 0 0 .434.748H5a.5.5 0 0 1 0 1H1.723A1.5 1.5 0 0 1 .421 12.24zm10.89 1.463a.5.5 0 1 0-.868.496l1.716 3.004a.5.5 0 0 1-.434.748h-5.57l.647-.646a.5.5 0 1 0-.708-.707l-1.5 1.5a.5.5 0 0 0 0 .707l1.5 1.5a.5.5 0 1 0 .708-.707l-.647-.647h5.57a1.5 1.5 0 0 0 1.302-2.244z"/>
+            </svg>
+        </div>
+        <div class="containertxt">
+            <h1>Easy Returns</h1>
+            <h4>No Questions Asked</h4>
+        </div>  
+    </div> 
+</div>
+
+
+
+<div class="bestselling">
+    <div class="bestsellingproduct">
+
+        <div class="heading">
+            <h1>Best Selling Products</h1>
+        </div>
+        <div class="leafimg">
+            <img src="/static/logo-leaf-new.png" alt="">
+        </div>
+
+        <div class="listitem">
+            <ul>
+                <li>
+                    <div class="productimage">
+                        <a href=""><img src="/static/coffee-asorted-400x400.jpg" alt=""></a>
+                    </div>
+                    <div class="productdescriptiom">
+                        <h4>Groceries</h4>
+                        <a href=""><h1>Assorted Coffee</h1></a>
+                        <div class="price">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-currency-rupee" viewBox="0 0 16 16">
+                                <path d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4z"/>
+                            </svg>
+                            <h2>250/-</h2>
+                        </div>
+
+                    </div>
+                </li>
+                <li>
+                    <div class="productimage">
+                        <a href=""><img src="/static/edible-oil-400x400.jpg" alt=""></a>
+                    </div>
+                    <div class="productdescriptiom">
+                        <h4>Groceries</h4>
+                        <a href=""><h1>Natural Oil 1L</h1></a>
+                        <div class="price">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-currency-rupee" viewBox="0 0 16 16">
+                                <path d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4z"/>
+                            </svg>
+                            <h2>575/-</h2>
+                        </div>
+
+                    </div>
+                </li>
+                <li>
+                    <div class="productimage">
+                        <a href=""><img src="/static/sanitizer-400x400.jpg" alt=""></a>
+                    </div>
+                    <div class="productdescriptiom">
+                        <h4>Groceries</h4>
+                        <a href=""><h1>Hand Sanitizer</h1></a>
+                        <div class="price">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-currency-rupee" viewBox="0 0 16 16">
+                                <path d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4z"/>
+                            </svg>
+                            <h2>300/-</h2>
+                        </div>
+
+                    </div>
+                </li>
+                <li>
+                    <div class="productimage">
+                        <a href=""><img src="/static/red-chillies-400x400.jpg" alt=""></a>
+                    </div>
+                    <div class="productdescriptiom">
+                        <h4>Groceries</h4>
+                        <a href=""><h1>Red Chillies 200g</h1></a>
+                        <div class="price">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-currency-rupee" viewBox="0 0 16 16">
+                                <path d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4z"/>
+                            </svg>
+                            <h2>110/-</h2>
+                        </div>
+
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+<!--<div class="categories" >
+
+</div> -->
+
+
+{% endblock %}
