@@ -24,16 +24,31 @@ def addtocart(request,id):
 def cartproducts(request):
         grandtotal = 0.0
         items = mo.Addtocart.objects.all()
+        item_count = items.count()
         for data in items:
             grandtotal += float(data.totalprice)
 
         data = {
             
+            'GrandTotal':grandtotal,
             'Allitems' : items,
-            'GrandTotal':grandtotal
+
         
-        }  
+        } 
+        
         return render(request,'addtocart.html',data)
+
+def cartcount(request):
+    items = mo.Addtocart.objects.all()
+    item_count = items.count()
+
+    
+    data = {
+            'ItemCount':item_count,
+        }
+    
+    return render (request, 'layout.html',data)
+      
 
 def deletecartitem(request,id):
       
