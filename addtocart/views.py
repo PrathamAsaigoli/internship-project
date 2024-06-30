@@ -1,4 +1,5 @@
 from django.shortcuts import render,redirect
+from django.http import JsonResponse
 from index import models
 from . import models as mo
 
@@ -47,7 +48,7 @@ def cartcount(request):
             'ItemCount':item_count,
         }
     
-    return render (request, 'layout.html',data)
+    return JsonResponse(data)
       
 
 def deletecartitem(request,id):
